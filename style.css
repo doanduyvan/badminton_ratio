@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main_div{
+    /* background-color: gray; */
+    width: 100%;
+    height: 100%;
+}
+
+.main_div1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main_div1 .reset{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 5px 10px;
+}
+
+.main_div1_ratio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.main_div1_ratio > span{
+    display: block;
+    font-size: 50px;
+    border: 1px solid gray;
+    padding: 5px 20px;
+}
+
+.main_div2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main_div2 > div {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.main_div2 > div.team1{
+    background-color: red;
+}
+
+.main_div2 > div > span{
+    position: absolute;
+    top: 15px;
+    background-color: white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.main_div2 > div.team1 > span{
+    left: 15px;
+}
+
+.main_div2 > div.team2 > span{
+    right: 15px;
+}
