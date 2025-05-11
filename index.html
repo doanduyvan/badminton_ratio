@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,15 +10,17 @@
     <main>
         <div class="main_div">
             <div class="main_div1">
+                <span class="undo undo1" id="undo1">-1</span>
                 <div class="main_div1_ratio">
-                    <span class="ratio1">0</span>
-                    <span class="ratio2">0</span>
+                    <span class="ratio1" id="ratio1">0</span>
+                    <span class="ratio2" id="ratio2">0</span>
                 </div>
-                <button class="reset">Reset</button>
+                <span class="undo undo2" id="undo2">-1</span> 
+                <button class="reset" id="reset">Reset</button>
             </div>
             <div class="main_div2">
-                <div class="team1"> <span>-1</span> </div>
-                <div class="team2"> <span>-1</span> </div>
+                <div class="team1" id="team1">  </div>
+                <div class="team2" id="team2"> </div>
             </div>
         </div>
     </main>
