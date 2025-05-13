@@ -4,6 +4,7 @@ const ratio = {
     team2: 0
 }
 
+
 const ratioLocalStogare = localStorage.getItem('ratio');
 if(ratioLocalStogare){
     const ratioParse = JSON.parse(ratioLocalStogare);
@@ -38,6 +39,11 @@ function handleRatio(work){
         default:
             return;
     }
+    const sound = document.getElementById('clickSound');
+    sound.pause();
+    sound.currentTime = 0;
+    sound.play();
+    
     Eteam1.textContent = ratio.team1;
     Eteam2.textContent = ratio.team2;
     localStorage.setItem("ratio", JSON.stringify(ratio))
